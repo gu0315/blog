@@ -1,2 +1,1 @@
-# gu015.github.io
-创建 GitHub Pages
+# 这是一个写博客的地方
