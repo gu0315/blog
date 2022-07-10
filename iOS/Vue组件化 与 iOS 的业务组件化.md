@@ -220,7 +220,8 @@ iOS 的组件化一部分也是解决了代码复用性的问题，但是更多�
 
 iOS 平台由于有 UIKit 这类苹果已经封装好的 Framework，所以基础控件已经封装完成，不需要我们自己手动封装了，所以 iOS 的组件着眼于一个大的功能，比如网络库，购物车，我的钱包，整个业务块。前端的页面布局是在 DOM 上进行的，只有最基础的 CSS 的标签，所以控件都需要自己写，Vue 的组件化封装的可复用的单文件组件其实更加类似于 iOS 这边的 ViewModel。
 
-友情链接：
+友情链接
+
 [Vue.js 官方文档](https://cn.vuejs.org/)
 
 [ Vue 与 iOS 的组件化](https://github.com/halfrost/Halfrost-Field/blob/master/contents/Vue/%E5%A4%A7%E8%AF%9D%E5%A4%A7%E5%89%8D%E7%AB%AF%E6%97%B6%E4%BB%A3(%E4%B8%80)%20%E2%80%94%E2%80%94%20Vue%20%E4%B8%8E%20iOS%20%E7%9A%84%E7%BB%84%E4%BB%B6%E5%8C%96.md)
