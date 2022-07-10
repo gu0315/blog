@@ -1,6 +1,6 @@
 
 CONTENT="
-platform :ios, '9.0'\n
+platform :ios, '15.0'\n
 use_frameworks!\n
 target '$1' do\n
 \tpod 'YYText'\n

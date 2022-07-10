@@ -26,7 +26,6 @@ def createProj()
     ];
     # 创建target，主要的参数 type: application :dynamic_library framework :static_library 意思大家都懂的
     target = proj.new_target(:application, "#{NAME}", :ios)
-    target.product_name = "#{NAME}"
     sourceFiles = Array.new
     # 将bundle加入到copy resources中
     for fr in filesInTarget.map { |f| group.new_reference(f) } do
@@ -53,12 +52,56 @@ def createProj()
     group.new_reference("Info.plist");
     # target添加相关的文件引用，这样编译的时候才能引用到
     target.add_file_references(sourceFiles)
+    # copy build_configurations
+    target.add_build_configuration('Inhouse', :release)
+    proj.add_build_configuration("Inhouse", :release)
+
     # 添加target配置信息
     target.build_configuration_list.set_setting('INFOPLIST_FILE', "$(SRCROOT)/#{NAME}/Info.plist")
     target.build_configuration_list.set_setting("VALID_ARCHS", "$(ARCHS_STANDARD)");
     target.build_configuration_list.set_setting("SWIFT_VERSION", "5.0");
     target.build_configuration_list.set_setting("MARKETING_VERSION", "1.0");
     target.build_configuration_list.set_setting("PRODUCT_BUNDLE_IDENTIFIER", "#{BUNDLEID}");
+
+    #recreate schemes
+    proj.recreate_user_schemes(visible = true)
+    # create scheme
+    inhouseScheme = Xcodeproj::XCScheme.new
+    inhouseScheme.add_build_target(target)
+    inhouseScheme.set_launch_target(target)
+    inhouseScheme.launch_action.build_configuration = 'Inhouse'
+    inhouseScheme.archive_action.build_configuration = 'Inhouse'
+    inhouseScheme.save_as(proj.path, "#{NAME}-Inhouse")
+
+    releaseScheme = Xcodeproj::XCScheme.new
+    releaseScheme.add_build_target(target)
+    releaseScheme.set_launch_target(target)
+    releaseScheme.save_as(proj.path, "#{NAME}-Release")
+
+    #设置target相关配置
+    proj.build_configurations.map do |item|
+        item.build_settings["SWIFT_VERSION"] = "5.0"
+        if item.name == "Inhouse"
+            # item.build_settings.update(proj.build_settings("Inhouse"))
+            item.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] = 'INHOUSE=1'
+            item.build_settings['SWIFT_ACTIVE_COMPILATION_CONDITIONS'] = 'Inhouse'
+            item.build_settings['BUNDLE_ID_SUFFIX'] = '.Inhouse'
+        end
+        if item.name == "Release"
+            item.build_settings.update(proj.build_settings("Release"))
+            item.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] = 'RELEASE=1'
+            item.build_settings['SWIFT_ACTIVE_COMPILATION_CONDITIONS'] = 'Release'
+            item.build_settings['BUNDLE_ID_SUFFIX'] = '.Release'
+        end
+    end
+    #  build_configurations
+    target.build_configurations.map do |item|
+        #设置target相关配置
+        item.build_settings["SWIFT_VERSION"] = "5.0"
+        if item.name == "Inhouse"
+            item.build_settings["PRODUCT_BUNDLE_IDENTIFIER"] = "#{BUNDLEID}.Inhouse"
+        end
+    end
     # 保存
     proj.save
 end
@@ -68,4 +111,5 @@ def execute
     # createModuleLib
     createProj
 end
+
 execute
