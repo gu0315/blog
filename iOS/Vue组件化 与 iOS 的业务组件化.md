@@ -200,6 +200,16 @@ protocol-class 也是在蘑菇街组件中提出的，对于需要非常规参�
 }
 ```
 
+#### 4.AppDelegate解耦
+
+典型的解决方案有以下几种：
+
+• plist静态注册
+
+• load方法动态注册
+
+• 基于__attribute__的clang语法，把注册信息写到mach-o文件里 [美团方案](https://mp.weixin.qq.com/s/jN3jaNrvXczZoYIRCWZs7w)  [facebook方案](https://everettjf.github.io/2016/08/20/facebook-explore-section-fbinjectable/)  [案例](https://everettjf.github.io/2016/08/20/facebook-explore-section-fbinjectable/)
+
 ### 两者平台上开发方式存在差异
 
 主要体现在单页应用和类多页应用的差异。现在前端比较火的一种应用就是单页Web应用（single page web application，SPA），顾名思义，就是只有一张Web页面的应用，是加载单个HTML 页面并在用户与应用程序交互时动态更新该页面的Web应用程序。
@@ -220,11 +230,8 @@ iOS 的组件化一部分也是解决了代码复用性的问题，但是更多�
 
 iOS 平台由于有 UIKit 这类苹果已经封装好的 Framework，所以基础控件已经封装完成，不需要我们自己手动封装了，所以 iOS 的组件着眼于一个大的功能，比如网络库，购物车，我的钱包，整个业务块。前端的页面布局是在 DOM 上进行的，只有最基础的 CSS 的标签，所以控件都需要自己写，Vue 的组件化封装的可复用的单文件组件其实更加类似于 iOS 这边的 ViewModel。
 
-友情链接
-
+友情链接：
 [Vue.js 官方文档](https://cn.vuejs.org/)
-
-[ Vue 与 iOS 的组件化](https://github.com/halfrost/Halfrost-Field/blob/master/contents/Vue/%E5%A4%A7%E8%AF%9D%E5%A4%A7%E5%89%8D%E7%AB%AF%E6%97%B6%E4%BB%A3(%E4%B8%80)%20%E2%80%94%E2%80%94%20Vue%20%E4%B8%8E%20iOS%20%E7%9A%84%E7%BB%84%E4%BB%B6%E5%8C%96.md)
 
 [组件化 OR 模块化](https://www.zybuluo.com/qidiandasheng/note/445105)
 
