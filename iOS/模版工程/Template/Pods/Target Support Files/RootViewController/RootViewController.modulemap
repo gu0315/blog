@@ -1,0 +1,6 @@
+framework module RootViewController {
+  umbrella header "RootViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

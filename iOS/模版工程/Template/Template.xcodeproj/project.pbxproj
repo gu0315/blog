@@ -14,6 +14,7 @@
 		E6DFB8162879AF96005A3916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6DFB8142879AF96005A3916 /* Main.storyboard */; };
 		E6DFB8182879AF97005A3916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6DFB8172879AF97005A3916 /* Assets.xcassets */; };
 		E6DFB81B2879AF97005A3916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6DFB8192879AF97005A3916 /* LaunchScreen.storyboard */; };
+		E6E18561288562A400691397 /* text.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E18560288562A400691397 /* text.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		E6DFB8172879AF97005A3916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6DFB81A2879AF97005A3916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6DFB81C2879AF97005A3916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6E1855728854C7000691397 /* Template-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Template-Bridging-Header.h"; sourceTree = "<group>"; };
+		E6E18560288562A400691397 /* text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = text.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +51,6 @@
 				5778F4B20B5ECEF2AC68F5E5 /* Pods-Template.debug.xcconfig */,
 				36B00BC18191A99C7F1982CC /* Pods-Template.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -87,7 +89,9 @@
 				E6DFB8142879AF96005A3916 /* Main.storyboard */,
 				E6DFB8172879AF97005A3916 /* Assets.xcassets */,
 				E6DFB8192879AF97005A3916 /* LaunchScreen.storyboard */,
+				E6E1855728854C7000691397 /* Template-Bridging-Header.h */,
 				E6DFB81C2879AF97005A3916 /* Info.plist */,
+				E6E18560288562A400691397 /* text.swift */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -103,6 +107,7 @@
 				E6DFB8072879AF96005A3916 /* Sources */,
 				E6DFB8082879AF96005A3916 /* Frameworks */,
 				E6DFB8092879AF96005A3916 /* Resources */,
+				7FD4FBB62EF734C33A6DF835 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +130,7 @@
 				TargetAttributes = {
 					E6DFB80A2879AF96005A3916 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -182,6 +188,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7FD4FBB62EF734C33A6DF835 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Template/Pods-Template-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Template/Pods-Template-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Template/Pods-Template-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -191,6 +214,7 @@
 			files = (
 				E6DFB8132879AF96005A3916 /* ViewController.swift in Sources */,
 				E6DFB80F2879AF96005A3916 /* AppDelegate.swift in Sources */,
+				E6E18561288562A400691397 /* text.swift in Sources */,
 				E6DFB8112879AF96005A3916 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,8 +363,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2NK6B734A5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Template/Info.plist;
@@ -357,6 +383,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.guqianxiang.template.Template;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Template/Template-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -368,8 +396,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2NK6B734A5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Template/Info.plist;
@@ -386,6 +416,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.guqianxiang.template.Template;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Template/Template-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

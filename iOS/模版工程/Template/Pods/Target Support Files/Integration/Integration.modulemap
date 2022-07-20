@@ -1,0 +1,6 @@
+framework module Integration {
+  umbrella header "Integration-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Integration",
+  "version": "0.1.0",
+  "summary": "自动化",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "gqx": "guqianxiang@souche.com"
+  },
+  "source": {
+    "path": "Classes/**/*"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Classes/**/*.{h,m,swift}",
+  "public_header_files": "Integration/Classes/**/*.h"
+}
