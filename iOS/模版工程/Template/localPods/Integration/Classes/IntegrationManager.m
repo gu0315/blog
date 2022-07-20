@@ -36,13 +36,12 @@ static NSArray<Class>* readConfigurationClasses(){
             #ifndef __LP64__
                 const struct mach_header *mhp = (struct mach_header*)info.dli_fbase;
                 unsigned long size = 0;
-            uint32_t *memory = (uint32_t*)getsectiondata(mhp, "__DATA", InjectableSectionName, & size);
-            #else /* defined(__LP64__) */
+                uint32_t *memory = (uint32_t*)getsectiondata(mhp, "__DATA", InjectableSectionName, & size);
+            #else
                 const struct mach_header_64 *mhp = (struct mach_header_64*)info.dli_fbase;
                 unsigned long size = 0;
                 uint64_t *memory = (uint64_t*)getsectiondata(mhp, "__DATA", InjectableSectionName, & size);
-            #endif /* defined(__LP64__) */
-            //printf("%s-----%d\n",name, size/sizeof(void*));
+            #endif
             for(int idx = 0; idx < size/sizeof(void*); ++idx){
                 char *string = (char*)memory[idx];
                 NSString *str = [NSString stringWithUTF8String:string];
@@ -62,16 +61,13 @@ static NSArray<Class>* readConfigurationClasses(){
                 if(cls) {
                     [classes addObject:cls];
                 }
-                NSLog(@"class name = %@", className);
             }
         }
     });
-    
     return classes;
 }
 
 @implementation IntegrationManager : NSObject
-
 
 + (Class)classForProtocol:(Protocol*)protocol{
     NSArray<Class> *classes = [self classesForProtocol_internal:protocol];
@@ -94,13 +90,13 @@ static NSArray<Class>* readConfigurationClasses(){
 
 + (NSArray<Class>*)classesForProtocol_internal:(Protocol*)protocol{
     NSArray<Class> *allClasses = readConfigurationClasses();
-    NSLog(@"all classes = %@", allClasses);
     NSMutableArray<Class> *result = [NSMutableArray new];
     for (Class cls in allClasses) {
         if(class_conformsToProtocol(cls, protocol)){
             [result addObject:cls];
         }
     }
+    NSLog(@"classes = \n%@", allClasses);
     return allClasses;
 }
 

@@ -18,7 +18,6 @@ char *kRootViewControllerConfiguration InjectableDATA = "+[RootViewControllerCon
 }
 
 + (void)fb_injectable {
-    NSLog(@"开始初始化");
     [RootViewController setRootViewController];
 }
 

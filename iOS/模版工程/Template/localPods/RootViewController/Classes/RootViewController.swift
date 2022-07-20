@@ -14,11 +14,11 @@ public class RootViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .red
+        self.view.backgroundColor = .yellow
     }
 
-    @objc public class func setRootViewController() {
-        print("我正在初始化")
+    @objc public static func setRootViewController() {
+        print("我正在初始化根控制器")
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.backgroundColor = UIColor.white
         if (UIApplication.shared.delegate?.window != nil) {
