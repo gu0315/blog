@@ -14,11 +14,17 @@ public class RootViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .yellow
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = .red
     }
 
     @objc public class func setRootViewController() {
         print("我正在初始化")
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.backgroundColor = UIColor.white
+        if (UIApplication.shared.delegate?.window != nil) {
+            let apWindow: UIWindow? = UIApplication.shared.windows.first
+            apWindow?.makeKeyAndVisible()
+            apWindow?.rootViewController = RootViewController()
+        }
     }
 }
