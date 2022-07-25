@@ -6,15 +6,19 @@
 //
 
 import UIKit
-import RootViewController
 
 @main
-public class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    public var window: UIWindow?
+    var window: UIWindow?
     
-    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    var application: UIApplication?
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        self.application = application
         // 自动注OC:__C.IntegrationProtocol Swift:Template.AProtocol
+        // 措施化无参SDK, TODO: 推送还是要自己配的
         let arr = String(reflecting: IntegrationProtocol.self).description.split(separator: ".")
         if arr.first == "__C" {
             let aprotocol = NSProtocolFromString(String(arr[1]))
@@ -25,11 +29,6 @@ public class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         return true
     }
-    
-    
-    
-    
-    
-    
+
 }
 

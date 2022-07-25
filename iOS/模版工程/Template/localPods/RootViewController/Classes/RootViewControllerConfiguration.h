@@ -6,11 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IntegrationManager.h"
 #import "RootViewControllerProtocol.h"
 @interface RootViewControllerConfiguration : NSObject<RootViewControllerProtocol>
-
-
 
 @end
 

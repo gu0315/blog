@@ -2,10 +2,16 @@ PODS:
   - Integration (0.1.0)
   - RootViewController (0.1.0):
     - Integration
+  - SCCModule (1.3.3)
 
 DEPENDENCIES:
   - Integration (from `localPods/Integration/`)
   - RootViewController (from `localPods/RootViewController/`)
+  - SCCModule
+
+SPEC REPOS:
+  https://git.souche-inc.com/geliang/cheniu_pod.git:
+    - SCCModule
 
 EXTERNAL SOURCES:
   Integration:
@@ -15,8 +21,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Integration: cce26c58c648482909c293fd155c0e8a73a96c81
-  RootViewController: a0b1378e51b73b5965bffbbdd3d1b875b137cc8c
+  RootViewController: 43cb8cc36d63e1f6d95a3ee5e237a20c093afdf0
+  SCCModule: 5ca05f69c003e4000650e0c4b94b60e091ad4a8e
 
-PODFILE CHECKSUM: 39ab6162c3fa66ee6f6e648fdc863917c1f03b36
+PODFILE CHECKSUM: 70d00f16e1e0ee7faf4e016fa68eb9e342b2dcb9
 
 COCOAPODS: 1.11.3

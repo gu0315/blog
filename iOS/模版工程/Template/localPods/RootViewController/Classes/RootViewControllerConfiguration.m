@@ -6,6 +6,7 @@
 //
 
 #import "RootViewControllerConfiguration.h"
+#import "IntegrationManager.h"
 #import <RootViewController/RootViewController-Swift.h>
 #import <objc/runtime.h>
 
@@ -14,11 +15,11 @@ char *kRootViewControllerConfiguration InjectableDATA = "+[RootViewControllerCon
 @implementation RootViewControllerConfiguration
 
 + (long)integrationPriority {
-    return  0;
+    return  1;
 }
 
 + (void)fb_injectable {
-    [RootViewController setRootViewController];
+    [WindowRootViewController setRootViewController];
 }
 
 @end

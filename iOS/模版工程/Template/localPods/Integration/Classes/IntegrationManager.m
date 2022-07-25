@@ -96,17 +96,17 @@ static NSArray<Class>* readConfigurationClasses(){
             [result addObject:cls];
         }
     }
-    NSLog(@"classes = \n%@", allClasses);
     return allClasses;
 }
 
 
 + (void)executeArrayForProtocol:(Protocol*)protocol {
     NSArray<Class> *classes = [self classesForProtocol_internal:protocol];
-    //TODO 遍历优先级,优先级高的先初始化
+    //遍历优先级,优先级高的先初始化
     NSArray<Class> *result = [classes sortedArrayUsingComparator:^NSComparisonResult(id _Nonnull obj1, id _Nonnull obj2) {
-        return [obj1 compare:obj2]; // 升序
+        return [obj1 integrationPriority] > [obj2 integrationPriority]; // 升序
     }];
+    NSLog(@"classes = \n%@", result);
     for (Class cls in result) {
         if(class_conformsToProtocol(cls, protocol)){
             [cls fb_injectable];

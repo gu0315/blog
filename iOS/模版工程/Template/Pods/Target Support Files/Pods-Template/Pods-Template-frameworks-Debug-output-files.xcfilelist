@@ -1,2 +1,3 @@
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Integration.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RootViewController.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCCModule.framework

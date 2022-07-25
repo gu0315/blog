@@ -1,6 +1,21 @@
+source 'https://cdn.cocoapods.org'
+source 'https://git.souche-inc.com/geliang/cheniu_pod.git'
+source 'https://git.souche-inc.com/cyp-mobile-ios/privateCocoapodsSpec.git'
+source 'https://git.souche-inc.com/cheyipai/privatecocoapodsspec.git'
+source 'https://git.souche-inc.com/souche-f2e/h5-bundle-pod-repo.git'
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 target 'Template' do
   pod 'Integration', :path => 'localPods/Integration/'
   pod 'RootViewController', :path => 'localPods/RootViewController/'
+  pod 'SCCModule'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      target.build_settings(config.name)['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+    end
+  end
 end

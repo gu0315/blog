@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Template/Pods-Template-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Integration/Integration.framework
 ${BUILT_PRODUCTS_DIR}/RootViewController/RootViewController.framework
+${BUILT_PRODUCTS_DIR}/SCCModule/SCCModule.framework

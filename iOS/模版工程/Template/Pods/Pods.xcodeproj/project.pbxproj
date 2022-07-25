@@ -7,99 +7,167 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DD7383170D4C035E9BE00A201D770F5 /* Integration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AF5458E5ABFB2C570B6C6B5F347244 /* Integration-dummy.m */; };
+		09810BFA9ED34CF9861EE79D3164C037 /* WindowRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC56694AEC169917332EBB7921C04DCD /* WindowRootViewController.swift */; };
+		0ADC1ED734861A845D6463FD05AE8E05 /* SCCModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 63F5F1AE322EC63DA341BF2F29D9A1D7 /* SCCModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C7DAD1500E4A5D874D5E9E1AF8960EE /* SCCModuleHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 963C88E70349E045BA23D2F2BEB9B39E /* SCCModuleHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DD7383170D4C035E9BE00A201D770F5 /* Integration-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5FA8A1E3B78F005816A44C778E2A971 /* Integration-dummy.m */; };
+		0FCC95856C39AA10A1A76F4E11830567 /* UINavigationController+SCCModulor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B9132095166BA21938192ABB9652E76 /* UINavigationController+SCCModulor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11488F60672ABD273CA628C241B0CB25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		37FB32C2FE20C96C0A08D834BD616159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3C1EA4E5B1E10A9AF82C10B80349F9F3 /* RootViewControllerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9536F2060F4EE321ABADA09DF62C49 /* RootViewControllerConfiguration.m */; };
-		5C19085BCE665A7A33B5F3F2547B190A /* Integration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4540A9CCF726E94A4F0718B98720F2E /* Integration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5D6A7AB2526C2EAD77B7C3783E6C1FD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		6B28B8B94FC4DF831DCB28C10A7162C6 /* Pods-Template-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B27D8A5EFA6B6E161BBFAB58548959D8 /* Pods-Template-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F19B11F697E3077CBD79D0C3F2D3E7D /* RootViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FFD9497A04EE01C6125EC7710014BB8 /* RootViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		864A6225F275413DCF68EB10BDCA5F77 /* IntegrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A8A904899F66AB61CB6A688D0E79885 /* IntegrationManager.m */; };
-		B9CE84280FB5DE8B122E646D7E038AF1 /* RootViewControllerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = ADE6FC06F54593301455768297CC59F2 /* RootViewControllerConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BAA7401270912E7D49E58EF42AA51447 /* RootViewControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 67027F1F379A89F312A7C300C89515C2 /* RootViewControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C2E6386AF6528686535AC94FFA2A9280 /* RootViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 864EB4BAFA53C0F8D2837ED732376CFC /* RootViewController-dummy.m */; };
-		C82FE4F8FF28409AB3D7337DCEFF438F /* IntegrationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 403B253DF455F8AB77B19D1CBCEA504B /* IntegrationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6A84E612886B6E2004A28D6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A84E602886B6E2004A28D6 /* RootViewController.swift */; };
-		F370B702638F53FB7B8EB1C000459C69 /* IntegrationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D31E8A54B443A2A37E989020EFF55861 /* IntegrationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F38CE4DDFD58707FC87E6D1BBABC7E0E /* Pods-Template-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6150E5FF430B70CC4B44F142F3446CB /* Pods-Template-dummy.m */; };
+		2471B76D9E90A64237A4BEE9DD620136 /* SCCModulorTakeEffectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A301C4B5B7560860514D7E94A568A649 /* SCCModulorTakeEffectManager.m */; };
+		3593130F1CB3A06EF1F7220B9788B8B4 /* SCCDynamicModulor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0109749BD54A11515606E821BB8685A4 /* SCCDynamicModulor.m */; };
+		4ADA38951EE908D93C0982E07A24CB15 /* SCCViewControllerModuleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B1C133E6176ED14BF7B929F9D94A49 /* SCCViewControllerModuleConfig.m */; };
+		4DF868C9E16EBD7E0BBDBA23DAF8D534 /* SCCModulorTakeEffectManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 52365D4B1E4C14A573F7052AD4332A56 /* SCCModulorTakeEffectManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E13F671ED98D8DEB2F4CD157D0CD307 /* SCCModuleParamEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E5B329423E55E4682DCA76D0B99E1B /* SCCModuleParamEnumerator.m */; };
+		5108AA76AE6DAE8CC760DACE89E40D61 /* Pods-Template-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6150E5FF430B70CC4B44F142F3446CB /* Pods-Template-dummy.m */; };
+		5317EF08A2A36A9E2FC9D70F5DAF4488 /* UINavigationController+SCCModulor.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F653A6EC88794B1B29D572ACD1890 /* UINavigationController+SCCModulor.m */; };
+		561F9D5C47BFC2226FCB51DFA35EDA37 /* Pods-Template-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B27D8A5EFA6B6E161BBFAB58548959D8 /* Pods-Template-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C19085BCE665A7A33B5F3F2547B190A /* Integration-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57DB265B612958D2EFBAE28DD53041CF /* Integration-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E522A9394D9FAE06706F93AF2417554 /* SCCModulor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DB15AF07DEBD9D33892806D6DB201F0 /* SCCModulor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63CBEA1F99DCD5DADB32F359A422F880 /* RootViewControllerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 906911753BCB54822BAF2E8EE2AEA5ED /* RootViewControllerConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CF9A105C4413B165A5AD227F9D1A3A4 /* SCCModuleDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 751A7BFF6D6C6A9C28FBB1E990210689 /* SCCModuleDescription.m */; };
+		70CDC7594F32CEF1A75965238446C39B /* SCCModuleURLInitInterceptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F82A579EE528BE6492733BB92AFA36A /* SCCModuleURLInitInterceptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79C0215E9B3A6FFFCE5491032156AC77 /* SCCModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1387E3826473E751FA057135736D48D3 /* SCCModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83A255228E7615731AC493DEF92B2081 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		864A6225F275413DCF68EB10BDCA5F77 /* IntegrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DFC72BAB674AF87B613027E578A06CC8 /* IntegrationManager.m */; };
+		8EF5A367D80CACB343CDDEF014FEBB19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8F92CE0ADF2B4CA42FD4EDBD4E82290F /* RootViewControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 651FAA4F0CD0D541D9310A81BFF6E6D7 /* RootViewControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		967A6034145F41A66CE3659BC9FD6048 /* UIViewController+SCCModulor.h in Headers */ = {isa = PBXBuildFile; fileRef = A3081E907A0D7294451E62318C358D47 /* UIViewController+SCCModulor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98D2AE2C2FEEB0745DC94C99293CC417 /* SCCModuleParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 1193594B45CB701542222B533FEA1397 /* SCCModuleParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BA994AB64B96DC2A2B14FFB59924D80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A07C70D07C326EFCBDA0E3E7A3FE5042 /* SCCModulor.m in Sources */ = {isa = PBXBuildFile; fileRef = AC2997E5EA662D904951FDF6A52EF5F0 /* SCCModulor.m */; };
+		A35105E435DAC26F5D67DC35EACEA144 /* SCCModuleURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6F0D39A82A88C27CB5F40469657AA /* SCCModuleURL.m */; };
+		B0512C737B2F69D25348F8CD76F061F4 /* SCCViewControllerModuleConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = ADCF79324E797D38B94ADFBCA422D76C /* SCCViewControllerModuleConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0E5A88C844B323B3E7B47BA9D7D4B91 /* SCCModuleParamEnumerator.h in Headers */ = {isa = PBXBuildFile; fileRef = C412C684295FF6C2965CC46BE3CB67AD /* SCCModuleParamEnumerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B15EE9D58B2D2DC3BB54CF6DBDF7243B /* SCCModuleMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A07C9775D4A08A8D0303AD939E5C0E9 /* SCCModuleMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9F1BD17E25532128EAF56A6A2AC64FD /* UIViewController+SCCModulor.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FFB4E39DF01A6DE06799145BC608F7 /* UIViewController+SCCModulor.m */; };
+		BA7DE7FA2D9C2947252ADAF82B0D9F06 /* SCCModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AFE8AF3401C4B9220C7088F7F0A6D7 /* SCCModule-dummy.m */; };
+		C0B51A954FAFEB7B5C7BC8C23B4409E2 /* SCCModuleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = E4AD67529BACDDB62A06C07DB53DC5D4 /* SCCModuleMethod.m */; };
+		C82FE4F8FF28409AB3D7337DCEFF438F /* IntegrationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 62BB5A07137D38BF447AFD97051B9E45 /* IntegrationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C845F13532ADDE0A291053052B4F38DA /* RootViewControllerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6817D0AD6404F7A676C26BCB4D156EE2 /* RootViewControllerConfiguration.m */; };
+		D73D21103B18244A8874270357FC9F98 /* RootViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0862B898E12DCC42FC0908F8F014DD0 /* RootViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC24CC6115F6F2B269ACF99F22C7A570 /* SCCDynamicModulor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A78868528AB18B694EDC4F18C57517B /* SCCDynamicModulor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDB50523CFF14CFF0F71C36E10AF68EC /* RootViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D135D02C0ABF205141D2983C731AB8 /* RootViewController-dummy.m */; };
+		E6C36045288E871800CEA184 /* TestViewControllerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C36043288E871800CEA184 /* TestViewControllerConfiguration.h */; };
+		E6C36046288E871800CEA184 /* TestViewControllerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C36044288E871800CEA184 /* TestViewControllerConfiguration.m */; };
+		EC129A7DF013010ACCB1CF9A0C66FF4D /* SCCModuleUnrecognizedProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E1B6DF269CCC323F6690F9205C9D8F3B /* SCCModuleUnrecognizedProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F370B702638F53FB7B8EB1C000459C69 /* IntegrationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 41E164DA8B374E6A2519D6B5D722F43C /* IntegrationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6BB44407F9CCE38F49907CCCC818060 /* SCCModuleDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = E49D966C5C467F82CA76552883081278 /* SCCModuleDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7AC9CC6C457C7118E7A7304760E9DA0 /* SCCModuleURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B1B16687F9DEC2FA58E0C4C93AD5082 /* SCCModuleURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEFE3A2ABF74ED0948CC2F36278DEFE4 /* SCCModuleParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D72F81E1E6252B0EC40FE5BD60BEC36 /* SCCModuleParam.m */; };
+		FF9400DE6299B036668406EDF771B6E9 /* SCCModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E24DDA01098B0FD2C00523097DE171D4 /* SCCModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		189AC54BDC27314A0B64F803C5BBC9B2 /* PBXContainerItemProxy */ = {
+		24C5AA377DB0ECFB7EF3E7DC60A8B044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74BCCE4DA6C3419669525767EE8134D8;
+			remoteInfo = SCCModule;
+		};
+		4D4723A3D046001EE5408CD711E560A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 33C7A91C0CC229CBD32807A80CA2F609;
 			remoteInfo = Integration;
 		};
-		5688E871E090F78D11064BE6D9CD237C /* PBXContainerItemProxy */ = {
+		D41F0C39AF8EF951D5BF74F85E97A096 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33C7A91C0CC229CBD32807A80CA2F609;
+			remoteInfo = Integration;
+		};
+		D6325188F0775F633A98BA24899D4AD7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CC784D28393DBB62D936CB8B0BB62AFE;
 			remoteInfo = RootViewController;
 		};
-		E74C917CA547ADCC23491C6998D8B96D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 33C7A91C0CC229CBD32807A80CA2F609;
-			remoteInfo = Integration;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CF7D1704004EF0362BCADE2A5B797B7 /* RootViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RootViewController.debug.xcconfig; sourceTree = "<group>"; };
+		0109749BD54A11515606E821BB8685A4 /* SCCDynamicModulor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCCDynamicModulor.m; path = SCCModule/Core/SCCDynamicModulor.m; sourceTree = "<group>"; };
+		0B1B16687F9DEC2FA58E0C4C93AD5082 /* SCCModuleURL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCModuleURL.h; path = SCCModule/Core/SCCModuleURL.h; sourceTree = "<group>"; };
+		0F82A579EE528BE6492733BB92AFA36A /* SCCModuleURLInitInterceptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCModuleURLInitInterceptor.h; path = SCCModule/Interceptor/SCCModuleURLInitInterceptor.h; sourceTree = "<group>"; };
+		1028DC9AAD990F1B99D9637EA20E7CA4 /* RootViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RootViewController.modulemap; sourceTree = "<group>"; };
+		1193594B45CB701542222B533FEA1397 /* SCCModuleParam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCModuleParam.h; path = SCCModule/Description/SCCModuleParam.h; sourceTree = "<group>"; };
+		1387E3826473E751FA057135736D48D3 /* SCCModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCModule.h; path = SCCModule/Core/SCCModule.h; sourceTree = "<group>"; };
+		15850B9D71593083C3446BFEF1E28D8D /* SCCModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCCModule.modulemap; sourceTree = "<group>"; };
 		216A02372C52DE0957DEA820DECA951E /* Pods-Template-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Template-frameworks.sh"; sourceTree = "<group>"; };
+		2479681614C20B7D0576F4253CAC2CEA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		253BA75442CE4D723A471B04D5A973D2 /* Integration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Integration.debug.xcconfig; sourceTree = "<group>"; };
 		274125AD259B06C5BDBDB6C62DC29D02 /* Integration */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Integration; path = Integration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A8A904899F66AB61CB6A688D0E79885 /* IntegrationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IntegrationManager.m; path = Classes/IntegrationManager.m; sourceTree = "<group>"; };
-		324BE0E0F3E1548E6DFF6544003255EC /* Integration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Integration.modulemap; sourceTree = "<group>"; };
+		2CD6F0D39A82A88C27CB5F40469657AA /* SCCModuleURL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCCModuleURL.m; path = SCCModule/Core/SCCModuleURL.m; sourceTree = "<group>"; };
+		304DFEB5AD1807886C307D137BC9E4DB /* RootViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RootViewController.debug.xcconfig; sourceTree = "<group>"; };
+		38B1C133E6176ED14BF7B929F9D94A49 /* SCCViewControllerModuleConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCCViewControllerModuleConfig.m; path = SCCModule/Config/SCCViewControllerModuleConfig.m; sourceTree = "<group>"; };
 		397F67F6CD8A0204263D9C8A27F26200 /* Pods-Template */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Template"; path = Pods_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DD5E1859EE8D821854E6CBBBCA7AA51 /* RootViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RootViewController-prefix.pch"; sourceTree = "<group>"; };
-		403B253DF455F8AB77B19D1CBCEA504B /* IntegrationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IntegrationManager.h; path = Classes/IntegrationManager.h; sourceTree = "<group>"; };
-		454242C7857C67032739E7F66678E98B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		41E164DA8B374E6A2519D6B5D722F43C /* IntegrationProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IntegrationProtocol.h; path = Classes/IntegrationProtocol.h; sourceTree = "<group>"; };
 		467CFBED61980633C54E4739545EA7FD /* Pods-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Template.release.xcconfig"; sourceTree = "<group>"; };
 		483193499EBE904A9882CFCA4EFECBFA /* Pods-Template-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Template-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4FFD9497A04EE01C6125EC7710014BB8 /* RootViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RootViewController-umbrella.h"; sourceTree = "<group>"; };
-		6258FD69F846D3F4A6CD5AF4FCD8F62E /* Integration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Integration.release.xcconfig; sourceTree = "<group>"; };
-		67027F1F379A89F312A7C300C89515C2 /* RootViewControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RootViewControllerProtocol.h; path = Classes/RootViewControllerProtocol.h; sourceTree = "<group>"; };
+		4A81130F00B566ADE7B0D7EC4D594922 /* SCCModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCCModule.release.xcconfig; sourceTree = "<group>"; };
+		52365D4B1E4C14A573F7052AD4332A56 /* SCCModulorTakeEffectManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCModulorTakeEffectManager.h; path = SCCModule/Core/SCCModulorTakeEffectManager.h; sourceTree = "<group>"; };
+		57DB265B612958D2EFBAE28DD53041CF /* Integration-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Integration-umbrella.h"; sourceTree = "<group>"; };
+		5B9132095166BA21938192ABB9652E76 /* UINavigationController+SCCModulor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+SCCModulor.h"; path = "SCCModule/Category/UINavigationController+SCCModulor.h"; sourceTree = "<group>"; };
+		5D72F81E1E6252B0EC40FE5BD60BEC36 /* SCCModuleParam.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCCModuleParam.m; path = SCCModule/Description/SCCModuleParam.m; sourceTree = "<group>"; };
+		62BB5A07137D38BF447AFD97051B9E45 /* IntegrationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IntegrationManager.h; path = Classes/IntegrationManager.h; sourceTree = "<group>"; };
+		63F5F1AE322EC63DA341BF2F29D9A1D7 /* SCCModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCModuleProtocol.h; path = SCCModule/Core/SCCModuleProtocol.h; sourceTree = "<group>"; };
+		651FAA4F0CD0D541D9310A81BFF6E6D7 /* RootViewControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RootViewControllerProtocol.h; path = Classes/RootViewControllerProtocol.h; sourceTree = "<group>"; };
+		66D135D02C0ABF205141D2983C731AB8 /* RootViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RootViewController-dummy.m"; sourceTree = "<group>"; };
+		6817D0AD6404F7A676C26BCB4D156EE2 /* RootViewControllerConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RootViewControllerConfiguration.m; path = Classes/RootViewControllerConfiguration.m; sourceTree = "<group>"; };
 		6D5A0EDEBC303658482A03C2D9CBEBF0 /* Pods-Template.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Template.modulemap"; sourceTree = "<group>"; };
 		6EE265B26332B5B8A8FFBD8A5B8A89FD /* Pods-Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Template.debug.xcconfig"; sourceTree = "<group>"; };
-		711E609EA5BB9C0CB80C057E1C3EE1DD /* Integration.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Integration.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		755B8493F312A6A60C5FD0756482E72E /* RootViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RootViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		796313F7F8ED91C48929E0D0A4102AA7 /* RootViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RootViewController.modulemap; sourceTree = "<group>"; };
+		751A7BFF6D6C6A9C28FBB1E990210689 /* SCCModuleDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCCModuleDescription.m; path = SCCModule/Description/SCCModuleDescription.m; sourceTree = "<group>"; };
+		755B8493F312A6A60C5FD0756482E72E /* RootViewController */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RootViewController; path = RootViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		796DA620F972F6E045748370402827DD /* RootViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RootViewController.release.xcconfig; sourceTree = "<group>"; };
+		7A07C9775D4A08A8D0303AD939E5C0E9 /* SCCModuleMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCModuleMethod.h; path = SCCModule/Description/SCCModuleMethod.h; sourceTree = "<group>"; };
+		7A78868528AB18B694EDC4F18C57517B /* SCCDynamicModulor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCDynamicModulor.h; path = SCCModule/Core/SCCDynamicModulor.h; sourceTree = "<group>"; };
+		7DB15AF07DEBD9D33892806D6DB201F0 /* SCCModulor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCModulor.h; path = SCCModule/Core/SCCModulor.h; sourceTree = "<group>"; };
 		8489B0B6A6582DC832DD87F2D86D0DB6 /* Pods-Template-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Template-Info.plist"; sourceTree = "<group>"; };
-		864EB4BAFA53C0F8D2837ED732376CFC /* RootViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RootViewController-dummy.m"; sourceTree = "<group>"; };
-		89360FF646B96939E064A0C09B51F0F4 /* Integration-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Integration-prefix.pch"; sourceTree = "<group>"; };
-		8B63126E96811042C66A52DA4C1328EB /* RootViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RootViewController-Info.plist"; sourceTree = "<group>"; };
+		8A6049D6E9B9F8089B948D11637B0D54 /* RootViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RootViewController-prefix.pch"; sourceTree = "<group>"; };
 		8DA46FEF90245C5830C88E0BA1C1C48C /* Pods-Template-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Template-acknowledgements.plist"; sourceTree = "<group>"; };
-		9238FA8A944434D45D77B8FEDEC15133 /* Integration-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Integration-Info.plist"; sourceTree = "<group>"; };
-		99AF5458E5ABFB2C570B6C6B5F347244 /* Integration-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Integration-dummy.m"; sourceTree = "<group>"; };
+		906911753BCB54822BAF2E8EE2AEA5ED /* RootViewControllerConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RootViewControllerConfiguration.h; path = Classes/RootViewControllerConfiguration.h; sourceTree = "<group>"; };
+		91FFB4E39DF01A6DE06799145BC608F7 /* UIViewController+SCCModulor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+SCCModulor.m"; path = "SCCModule/Category/UIViewController+SCCModulor.m"; sourceTree = "<group>"; };
+		921161A28079B572EDB42F52040A41CB /* RootViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RootViewController-Info.plist"; sourceTree = "<group>"; };
+		963C88E70349E045BA23D2F2BEB9B39E /* SCCModuleHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCModuleHeader.h; path = SCCModule/Core/SCCModuleHeader.h; sourceTree = "<group>"; };
+		9BC916D4C245184226B5A96CD1F0EF35 /* SCCModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SCCModule-Info.plist"; sourceTree = "<group>"; };
+		9C3D362A1ABA0B73E8F2B87BA8E0456B /* RootViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RootViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A9B4DFC52A673E5497265BBF8705C6B6 /* RootViewController.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RootViewController.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ADE6FC06F54593301455768297CC59F2 /* RootViewControllerConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RootViewControllerConfiguration.h; path = Classes/RootViewControllerConfiguration.h; sourceTree = "<group>"; };
+		A301C4B5B7560860514D7E94A568A649 /* SCCModulorTakeEffectManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCCModulorTakeEffectManager.m; path = SCCModule/Core/SCCModulorTakeEffectManager.m; sourceTree = "<group>"; };
+		A3081E907A0D7294451E62318C358D47 /* UIViewController+SCCModulor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+SCCModulor.h"; path = "SCCModule/Category/UIViewController+SCCModulor.h"; sourceTree = "<group>"; };
+		AC2997E5EA662D904951FDF6A52EF5F0 /* SCCModulor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCCModulor.m; path = SCCModule/Core/SCCModulor.m; sourceTree = "<group>"; };
+		AD7A0D80A90467BD3370FD3619983C87 /* SCCModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCCModule.debug.xcconfig; sourceTree = "<group>"; };
+		ADCF79324E797D38B94ADFBCA422D76C /* SCCViewControllerModuleConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCViewControllerModuleConfig.h; path = SCCModule/Config/SCCViewControllerModuleConfig.h; sourceTree = "<group>"; };
+		B20B136967AD91DC1EBE51E1CAA59E9E /* Integration.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Integration.modulemap; sourceTree = "<group>"; };
 		B27D8A5EFA6B6E161BBFAB58548959D8 /* Pods-Template-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Template-umbrella.h"; sourceTree = "<group>"; };
-		B4540A9CCF726E94A4F0718B98720F2E /* Integration-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Integration-umbrella.h"; sourceTree = "<group>"; };
-		C39F47ACA0D5C954017A8615B58A75BB /* Integration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Integration.debug.xcconfig; sourceTree = "<group>"; };
+		BC56694AEC169917332EBB7921C04DCD /* WindowRootViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WindowRootViewController.swift; path = Classes/WindowRootViewController.swift; sourceTree = "<group>"; };
+		BF87866DC460611BA18730B943E39024 /* Integration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Integration.release.xcconfig; sourceTree = "<group>"; };
+		C412C684295FF6C2965CC46BE3CB67AD /* SCCModuleParamEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCModuleParamEnumerator.h; path = SCCModule/Description/SCCModuleParamEnumerator.h; sourceTree = "<group>"; };
 		C6150E5FF430B70CC4B44F142F3446CB /* Pods-Template-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Template-dummy.m"; sourceTree = "<group>"; };
-		D030EA62ED4C87F73870FEA6744956D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		D31E8A54B443A2A37E989020EFF55861 /* IntegrationProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IntegrationProtocol.h; path = Classes/IntegrationProtocol.h; sourceTree = "<group>"; };
-		E6A84E602886B6E2004A28D6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = Classes/RootViewController.swift; sourceTree = "<group>"; };
-		EB9536F2060F4EE321ABADA09DF62C49 /* RootViewControllerConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RootViewControllerConfiguration.m; path = Classes/RootViewControllerConfiguration.m; sourceTree = "<group>"; };
-		FE35B93AF30BC886B81B7B9C9A518DA3 /* RootViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RootViewController.release.xcconfig; sourceTree = "<group>"; };
+		DE8E0275FB7D2FBB4A5E7F04AFEE65A6 /* Integration-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Integration-Info.plist"; sourceTree = "<group>"; };
+		DFC72BAB674AF87B613027E578A06CC8 /* IntegrationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IntegrationManager.m; path = Classes/IntegrationManager.m; sourceTree = "<group>"; };
+		E1AFE8AF3401C4B9220C7088F7F0A6D7 /* SCCModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCCModule-dummy.m"; sourceTree = "<group>"; };
+		E1B6DF269CCC323F6690F9205C9D8F3B /* SCCModuleUnrecognizedProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCModuleUnrecognizedProtocol.h; path = SCCModule/Interceptor/SCCModuleUnrecognizedProtocol.h; sourceTree = "<group>"; };
+		E24DDA01098B0FD2C00523097DE171D4 /* SCCModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCCModule-umbrella.h"; sourceTree = "<group>"; };
+		E441A4A2CFBC86FED42EF706AAC0CECF /* SCCModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCCModule-prefix.pch"; sourceTree = "<group>"; };
+		E49D966C5C467F82CA76552883081278 /* SCCModuleDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCCModuleDescription.h; path = SCCModule/Description/SCCModuleDescription.h; sourceTree = "<group>"; };
+		E4AD67529BACDDB62A06C07DB53DC5D4 /* SCCModuleMethod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCCModuleMethod.m; path = SCCModule/Description/SCCModuleMethod.m; sourceTree = "<group>"; };
+		E5FA8A1E3B78F005816A44C778E2A971 /* Integration-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Integration-dummy.m"; sourceTree = "<group>"; };
+		E6C36043288E871800CEA184 /* TestViewControllerConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewControllerConfiguration.h; sourceTree = "<group>"; };
+		E6C36044288E871800CEA184 /* TestViewControllerConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewControllerConfiguration.m; sourceTree = "<group>"; };
+		F0862B898E12DCC42FC0908F8F014DD0 /* RootViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RootViewController-umbrella.h"; sourceTree = "<group>"; };
+		F278B0C01DB55ABBF45856C3909DDF0F /* SCCModule */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCCModule; path = SCCModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5E5B329423E55E4682DCA76D0B99E1B /* SCCModuleParamEnumerator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCCModuleParamEnumerator.m; path = SCCModule/Description/SCCModuleParamEnumerator.m; sourceTree = "<group>"; };
+		F9447D7BAD85F1C982248B499479C968 /* Integration.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Integration.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FE27C8580CB1E72B7813A5033A3011AA /* Integration-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Integration-prefix.pch"; sourceTree = "<group>"; };
+		FE9F9AFA6F263D75C0BBAD539D8F3510 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FF1F653A6EC88794B1B29D572ACD1890 /* UINavigationController+SCCModulor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+SCCModulor.m"; path = "SCCModule/Category/UINavigationController+SCCModulor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0E9D972910CBDD1744CFEB55F1CEA203 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				37FB32C2FE20C96C0A08D834BD616159 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3A096F6005D611D34DB872687AE14BFA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -108,30 +176,75 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4471A69DBB5559AE62C5408D24E23B6A /* Frameworks */ = {
+		8D81134EA3A716EF8221C36B9BD4FBD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D6A7AB2526C2EAD77B7C3783E6C1FD3 /* Foundation.framework in Frameworks */,
+				9BA994AB64B96DC2A2B14FFB59924D80 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F21066904E156A521DDCF09E8436436 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EF5A367D80CACB343CDDEF014FEBB19 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6175FA8C2C00B6106B00F40A597A1B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83A255228E7615731AC493DEF92B2081 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		54080236EDACB5851A51E20957011DBF /* Support Files */ = {
+		1E70E5DC0F51DC399616B1CCDF649AF8 /* SCCModule */ = {
 			isa = PBXGroup;
 			children = (
-				324BE0E0F3E1548E6DFF6544003255EC /* Integration.modulemap */,
-				99AF5458E5ABFB2C570B6C6B5F347244 /* Integration-dummy.m */,
-				9238FA8A944434D45D77B8FEDEC15133 /* Integration-Info.plist */,
-				89360FF646B96939E064A0C09B51F0F4 /* Integration-prefix.pch */,
-				B4540A9CCF726E94A4F0718B98720F2E /* Integration-umbrella.h */,
-				C39F47ACA0D5C954017A8615B58A75BB /* Integration.debug.xcconfig */,
-				6258FD69F846D3F4A6CD5AF4FCD8F62E /* Integration.release.xcconfig */,
+				7A78868528AB18B694EDC4F18C57517B /* SCCDynamicModulor.h */,
+				0109749BD54A11515606E821BB8685A4 /* SCCDynamicModulor.m */,
+				1387E3826473E751FA057135736D48D3 /* SCCModule.h */,
+				E49D966C5C467F82CA76552883081278 /* SCCModuleDescription.h */,
+				751A7BFF6D6C6A9C28FBB1E990210689 /* SCCModuleDescription.m */,
+				963C88E70349E045BA23D2F2BEB9B39E /* SCCModuleHeader.h */,
+				7A07C9775D4A08A8D0303AD939E5C0E9 /* SCCModuleMethod.h */,
+				E4AD67529BACDDB62A06C07DB53DC5D4 /* SCCModuleMethod.m */,
+				1193594B45CB701542222B533FEA1397 /* SCCModuleParam.h */,
+				5D72F81E1E6252B0EC40FE5BD60BEC36 /* SCCModuleParam.m */,
+				C412C684295FF6C2965CC46BE3CB67AD /* SCCModuleParamEnumerator.h */,
+				F5E5B329423E55E4682DCA76D0B99E1B /* SCCModuleParamEnumerator.m */,
+				63F5F1AE322EC63DA341BF2F29D9A1D7 /* SCCModuleProtocol.h */,
+				E1B6DF269CCC323F6690F9205C9D8F3B /* SCCModuleUnrecognizedProtocol.h */,
+				0B1B16687F9DEC2FA58E0C4C93AD5082 /* SCCModuleURL.h */,
+				2CD6F0D39A82A88C27CB5F40469657AA /* SCCModuleURL.m */,
+				0F82A579EE528BE6492733BB92AFA36A /* SCCModuleURLInitInterceptor.h */,
+				7DB15AF07DEBD9D33892806D6DB201F0 /* SCCModulor.h */,
+				AC2997E5EA662D904951FDF6A52EF5F0 /* SCCModulor.m */,
+				52365D4B1E4C14A573F7052AD4332A56 /* SCCModulorTakeEffectManager.h */,
+				A301C4B5B7560860514D7E94A568A649 /* SCCModulorTakeEffectManager.m */,
+				ADCF79324E797D38B94ADFBCA422D76C /* SCCViewControllerModuleConfig.h */,
+				38B1C133E6176ED14BF7B929F9D94A49 /* SCCViewControllerModuleConfig.m */,
+				5B9132095166BA21938192ABB9652E76 /* UINavigationController+SCCModulor.h */,
+				FF1F653A6EC88794B1B29D572ACD1890 /* UINavigationController+SCCModulor.m */,
+				A3081E907A0D7294451E62318C358D47 /* UIViewController+SCCModulor.h */,
+				91FFB4E39DF01A6DE06799145BC608F7 /* UIViewController+SCCModulor.m */,
+				97596DCF688E52D17364715CE29CB145 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../../Pods/Target Support Files/Integration";
+			path = SCCModule;
+			sourceTree = "<group>";
+		};
+		278CD8B12C50337E18386E043637FC3E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F9447D7BAD85F1C982248B499479C968 /* Integration.podspec */,
+				2479681614C20B7D0576F4253CAC2CEA /* LICENSE */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -142,19 +255,47 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		64A78A599724E7D9AB0C121B7D8CADFC /* Support Files */ = {
+		57FB7C2280D3EB94749E83F2805F14E1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				796313F7F8ED91C48929E0D0A4102AA7 /* RootViewController.modulemap */,
-				864EB4BAFA53C0F8D2837ED732376CFC /* RootViewController-dummy.m */,
-				8B63126E96811042C66A52DA4C1328EB /* RootViewController-Info.plist */,
-				3DD5E1859EE8D821854E6CBBBCA7AA51 /* RootViewController-prefix.pch */,
-				4FFD9497A04EE01C6125EC7710014BB8 /* RootViewController-umbrella.h */,
-				1CF7D1704004EF0362BCADE2A5B797B7 /* RootViewController.debug.xcconfig */,
-				FE35B93AF30BC886B81B7B9C9A518DA3 /* RootViewController.release.xcconfig */,
+				1028DC9AAD990F1B99D9637EA20E7CA4 /* RootViewController.modulemap */,
+				66D135D02C0ABF205141D2983C731AB8 /* RootViewController-dummy.m */,
+				921161A28079B572EDB42F52040A41CB /* RootViewController-Info.plist */,
+				8A6049D6E9B9F8089B948D11637B0D54 /* RootViewController-prefix.pch */,
+				F0862B898E12DCC42FC0908F8F014DD0 /* RootViewController-umbrella.h */,
+				304DFEB5AD1807886C307D137BC9E4DB /* RootViewController.debug.xcconfig */,
+				796DA620F972F6E045748370402827DD /* RootViewController.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../../Pods/Target Support Files/RootViewController";
+			sourceTree = "<group>";
+		};
+		5B3FB7575BDB65B9D7DF2477702208ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B20B136967AD91DC1EBE51E1CAA59E9E /* Integration.modulemap */,
+				E5FA8A1E3B78F005816A44C778E2A971 /* Integration-dummy.m */,
+				DE8E0275FB7D2FBB4A5E7F04AFEE65A6 /* Integration-Info.plist */,
+				FE27C8580CB1E72B7813A5033A3011AA /* Integration-prefix.pch */,
+				57DB265B612958D2EFBAE28DD53041CF /* Integration-umbrella.h */,
+				253BA75442CE4D723A471B04D5A973D2 /* Integration.debug.xcconfig */,
+				BF87866DC460611BA18730B943E39024 /* Integration.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/Integration";
+			sourceTree = "<group>";
+		};
+		778C1993A830BD64711AB41DF483C055 /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				62BB5A07137D38BF447AFD97051B9E45 /* IntegrationManager.h */,
+				DFC72BAB674AF87B613027E578A06CC8 /* IntegrationManager.m */,
+				41E164DA8B374E6A2519D6B5D722F43C /* IntegrationProtocol.h */,
+				278CD8B12C50337E18386E043637FC3E /* Pod */,
+				5B3FB7575BDB65B9D7DF2477702208ED /* Support Files */,
+			);
+			name = Integration;
+			path = ../localPods/Integration;
 			sourceTree = "<group>";
 		};
 		81CCB5DFC54E2A1AAB0C75A69A38AA99 /* Targets Support Files */ = {
@@ -165,55 +306,74 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		83A9C42DBD6B55BDDE66FA5A8D90F7CE /* Products */ = {
+		964BA41DBD9450D10486B28641AED548 /* RootViewController */ = {
 			isa = PBXGroup;
 			children = (
-				274125AD259B06C5BDBDB6C62DC29D02 /* Integration */,
-				397F67F6CD8A0204263D9C8A27F26200 /* Pods-Template */,
-				755B8493F312A6A60C5FD0756482E72E /* RootViewController.framework */,
+				E6C36043288E871800CEA184 /* TestViewControllerConfiguration.h */,
+				E6C36044288E871800CEA184 /* TestViewControllerConfiguration.m */,
+				906911753BCB54822BAF2E8EE2AEA5ED /* RootViewControllerConfiguration.h */,
+				6817D0AD6404F7A676C26BCB4D156EE2 /* RootViewControllerConfiguration.m */,
+				651FAA4F0CD0D541D9310A81BFF6E6D7 /* RootViewControllerProtocol.h */,
+				BC56694AEC169917332EBB7921C04DCD /* WindowRootViewController.swift */,
+				A3ECBA93A8FA5B9CEB0F77C05DD00F0C /* Pod */,
+				57FB7C2280D3EB94749E83F2805F14E1 /* Support Files */,
 			);
-			name = Products;
+			name = RootViewController;
+			path = ../localPods/RootViewController;
 			sourceTree = "<group>";
 		};
-		9044C1019F72E84F7BB8B9D498078E00 /* Development Pods */ = {
+		97596DCF688E52D17364715CE29CB145 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DFEC5E302B9DC261F1CA3F4FC777056D /* Integration */,
-				C6F2E5664B23922D40F8B1B0CE826D3F /* RootViewController */,
+				15850B9D71593083C3446BFEF1E28D8D /* SCCModule.modulemap */,
+				E1AFE8AF3401C4B9220C7088F7F0A6D7 /* SCCModule-dummy.m */,
+				9BC916D4C245184226B5A96CD1F0EF35 /* SCCModule-Info.plist */,
+				E441A4A2CFBC86FED42EF706AAC0CECF /* SCCModule-prefix.pch */,
+				E24DDA01098B0FD2C00523097DE171D4 /* SCCModule-umbrella.h */,
+				AD7A0D80A90467BD3370FD3619983C87 /* SCCModule.debug.xcconfig */,
+				4A81130F00B566ADE7B0D7EC4D594922 /* SCCModule.release.xcconfig */,
 			);
-			name = "Development Pods";
+			name = "Support Files";
+			path = "../Target Support Files/SCCModule";
 			sourceTree = "<group>";
 		};
-		AF37D62F27FE52CF67CCAB5D803876C5 /* Pod */ = {
+		A3ECBA93A8FA5B9CEB0F77C05DD00F0C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				711E609EA5BB9C0CB80C057E1C3EE1DD /* Integration.podspec */,
-				D030EA62ED4C87F73870FEA6744956D3 /* LICENSE */,
+				FE9F9AFA6F263D75C0BBAD539D8F3510 /* LICENSE */,
+				9C3D362A1ABA0B73E8F2B87BA8E0456B /* RootViewController.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		C6F2E5664B23922D40F8B1B0CE826D3F /* RootViewController */ = {
+		BC2A01A669E950885FDAA0AE01FD6AC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				67027F1F379A89F312A7C300C89515C2 /* RootViewControllerProtocol.h */,
-				ADE6FC06F54593301455768297CC59F2 /* RootViewControllerConfiguration.h */,
-				EB9536F2060F4EE321ABADA09DF62C49 /* RootViewControllerConfiguration.m */,
-				E6A84E602886B6E2004A28D6 /* RootViewController.swift */,
-				EC6DE3C44E57F11AEDEDC99D90C5D1DE /* Pod */,
-				64A78A599724E7D9AB0C121B7D8CADFC /* Support Files */,
+				274125AD259B06C5BDBDB6C62DC29D02 /* Integration */,
+				397F67F6CD8A0204263D9C8A27F26200 /* Pods-Template */,
+				755B8493F312A6A60C5FD0756482E72E /* RootViewController */,
+				F278B0C01DB55ABBF45856C3909DDF0F /* SCCModule */,
 			);
-			name = RootViewController;
-			path = ../localPods/RootViewController;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3729DDA564561D177A03344B86E393A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				778C1993A830BD64711AB41DF483C055 /* Integration */,
+				964BA41DBD9450D10486B28641AED548 /* RootViewController */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				9044C1019F72E84F7BB8B9D498078E00 /* Development Pods */,
+				C3729DDA564561D177A03344B86E393A /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				83A9C42DBD6B55BDDE66FA5A8D90F7CE /* Products */,
+				F31A41FAFCF74C01E5BD456B5923C3A3 /* Pods */,
+				BC2A01A669E950885FDAA0AE01FD6AC2 /* Products */,
 				81CCB5DFC54E2A1AAB0C75A69A38AA99 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -243,26 +403,12 @@
 			path = "Target Support Files/Pods-Template";
 			sourceTree = "<group>";
 		};
-		DFEC5E302B9DC261F1CA3F4FC777056D /* Integration */ = {
+		F31A41FAFCF74C01E5BD456B5923C3A3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				403B253DF455F8AB77B19D1CBCEA504B /* IntegrationManager.h */,
-				2A8A904899F66AB61CB6A688D0E79885 /* IntegrationManager.m */,
-				D31E8A54B443A2A37E989020EFF55861 /* IntegrationProtocol.h */,
-				AF37D62F27FE52CF67CCAB5D803876C5 /* Pod */,
-				54080236EDACB5851A51E20957011DBF /* Support Files */,
+				1E70E5DC0F51DC399616B1CCDF649AF8 /* SCCModule */,
 			);
-			name = Integration;
-			path = ../localPods/Integration;
-			sourceTree = "<group>";
-		};
-		EC6DE3C44E57F11AEDEDC99D90C5D1DE /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				454242C7857C67032739E7F66678E98B /* LICENSE */,
-				A9B4DFC52A673E5497265BBF8705C6B6 /* RootViewController.podspec */,
-			);
-			name = Pod;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,21 +424,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		573658978C1D7EC529D1B2A4DDC5E273 /* Headers */ = {
+		4E60C515D29876C79418F01FA420A2E6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F19B11F697E3077CBD79D0C3F2D3E7D /* RootViewController-umbrella.h in Headers */,
-				B9CE84280FB5DE8B122E646D7E038AF1 /* RootViewControllerConfiguration.h in Headers */,
-				BAA7401270912E7D49E58EF42AA51447 /* RootViewControllerProtocol.h in Headers */,
+				D73D21103B18244A8874270357FC9F98 /* RootViewController-umbrella.h in Headers */,
+				63CBEA1F99DCD5DADB32F359A422F880 /* RootViewControllerConfiguration.h in Headers */,
+				E6C36045288E871800CEA184 /* TestViewControllerConfiguration.h in Headers */,
+				8F92CE0ADF2B4CA42FD4EDBD4E82290F /* RootViewControllerProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8EB17B3094BE0BFAB11D6F0CBBE12BF /* Headers */ = {
+		8C7317A2670DFEB8B708456BF99A0D8A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B28B8B94FC4DF831DCB28C10A7162C6 /* Pods-Template-umbrella.h in Headers */,
+				DC24CC6115F6F2B269ACF99F22C7A570 /* SCCDynamicModulor.h in Headers */,
+				79C0215E9B3A6FFFCE5491032156AC77 /* SCCModule.h in Headers */,
+				FF9400DE6299B036668406EDF771B6E9 /* SCCModule-umbrella.h in Headers */,
+				F6BB44407F9CCE38F49907CCCC818060 /* SCCModuleDescription.h in Headers */,
+				0C7DAD1500E4A5D874D5E9E1AF8960EE /* SCCModuleHeader.h in Headers */,
+				B15EE9D58B2D2DC3BB54CF6DBDF7243B /* SCCModuleMethod.h in Headers */,
+				98D2AE2C2FEEB0745DC94C99293CC417 /* SCCModuleParam.h in Headers */,
+				B0E5A88C844B323B3E7B47BA9D7D4B91 /* SCCModuleParamEnumerator.h in Headers */,
+				0ADC1ED734861A845D6463FD05AE8E05 /* SCCModuleProtocol.h in Headers */,
+				EC129A7DF013010ACCB1CF9A0C66FF4D /* SCCModuleUnrecognizedProtocol.h in Headers */,
+				F7AC9CC6C457C7118E7A7304760E9DA0 /* SCCModuleURL.h in Headers */,
+				70CDC7594F32CEF1A75965238446C39B /* SCCModuleURLInitInterceptor.h in Headers */,
+				5E522A9394D9FAE06706F93AF2417554 /* SCCModulor.h in Headers */,
+				4DF868C9E16EBD7E0BBDBA23DAF8D534 /* SCCModulorTakeEffectManager.h in Headers */,
+				B0512C737B2F69D25348F8CD76F061F4 /* SCCViewControllerModuleConfig.h in Headers */,
+				0FCC95856C39AA10A1A76F4E11830567 /* UINavigationController+SCCModulor.h in Headers */,
+				967A6034145F41A66CE3659BC9FD6048 /* UIViewController+SCCModulor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9871185CBF23F4EE4E29A39AE736A4FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				561F9D5C47BFC2226FCB51DFA35EDA37 /* Pods-Template-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,39 +488,58 @@
 			productReference = 274125AD259B06C5BDBDB6C62DC29D02 /* Integration */;
 			productType = "com.apple.product-type.framework";
 		};
-		CC784D28393DBB62D936CB8B0BB62AFE /* RootViewController */ = {
+		74BCCE4DA6C3419669525767EE8134D8 /* SCCModule */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B90A812D3D05B94E378046EF6A05DF01 /* Build configuration list for PBXNativeTarget "RootViewController" */;
+			buildConfigurationList = 3EA89453013CC41083EA0FC0A3BE2134 /* Build configuration list for PBXNativeTarget "SCCModule" */;
 			buildPhases = (
-				573658978C1D7EC529D1B2A4DDC5E273 /* Headers */,
-				EE45C22C83F66F5C96E4B6E547A9B9E7 /* Sources */,
-				4471A69DBB5559AE62C5408D24E23B6A /* Frameworks */,
-				1746A3C30C9139ACDB64FD3592258D91 /* Resources */,
+				8C7317A2670DFEB8B708456BF99A0D8A /* Headers */,
+				8F3D0BBA92B4E37BDBEDE0C4A8C91ECF /* Sources */,
+				9F21066904E156A521DDCF09E8436436 /* Frameworks */,
+				AEEF31EC6A64DF4EB9EE1EC7D32C1646 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2F5EB46AFB81544438E21AF10643AF6B /* PBXTargetDependency */,
+			);
+			name = SCCModule;
+			productName = SCCModule;
+			productReference = F278B0C01DB55ABBF45856C3909DDF0F /* SCCModule */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC784D28393DBB62D936CB8B0BB62AFE /* RootViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EDEEAC622FD899FDED230FDF9CA06F5 /* Build configuration list for PBXNativeTarget "RootViewController" */;
+			buildPhases = (
+				4E60C515D29876C79418F01FA420A2E6 /* Headers */,
+				6DA4B99D33AC4BE120C64CC2B8B9DF1F /* Sources */,
+				E6175FA8C2C00B6106B00F40A597A1B5 /* Frameworks */,
+				E36B2A3BD9CA2DE7FCD0C810B57242F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A6C83D0F17364E755CD3FE7E2CAA686 /* PBXTargetDependency */,
 			);
 			name = RootViewController;
 			productName = RootViewController;
-			productReference = 755B8493F312A6A60C5FD0756482E72E /* RootViewController.framework */;
+			productReference = 755B8493F312A6A60C5FD0756482E72E /* RootViewController */;
 			productType = "com.apple.product-type.framework";
 		};
 		F58C4A9779CC1F6BBEAC1DCCDFE6921D /* Pods-Template */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5579424971D52BCAD5C0F72C1077827A /* Build configuration list for PBXNativeTarget "Pods-Template" */;
+			buildConfigurationList = 5637F42F91CFEE3D1B90ACD5222C0B51 /* Build configuration list for PBXNativeTarget "Pods-Template" */;
 			buildPhases = (
-				D8EB17B3094BE0BFAB11D6F0CBBE12BF /* Headers */,
-				BE6B3883751A4CE944DD5143B00330C5 /* Sources */,
-				0E9D972910CBDD1744CFEB55F1CEA203 /* Frameworks */,
-				138D0AD9F1BE2AAC01ED009651A3DEA7 /* Resources */,
+				9871185CBF23F4EE4E29A39AE736A4FF /* Headers */,
+				5B475FC58B9339E9D50DE1C502A50693 /* Sources */,
+				8D81134EA3A716EF8221C36B9BD4FBD9 /* Frameworks */,
+				3C7EFD4439DEB773AD8E37A87529092B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1720693172DCDECCFEBCD5DA8739FCD2 /* PBXTargetDependency */,
-				140949936699EF52EDEDE4B611F14EB7 /* PBXTargetDependency */,
+				9DDA8F2E72954EC472BE8D0C4052FF1A /* PBXTargetDependency */,
+				CB7B8CD8879E9CF5E702B2CB42E91C37 /* PBXTargetDependency */,
+				912FAC92E8B412DAA125FD90AB0E8235 /* PBXTargetDependency */,
 			);
 			name = "Pods-Template";
 			productName = Pods_Template;
@@ -364,11 +554,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
-				TargetAttributes = {
-					CC784D28393DBB62D936CB8B0BB62AFE = {
-						LastSwiftMigration = 1310;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -379,33 +564,41 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 83A9C42DBD6B55BDDE66FA5A8D90F7CE /* Products */;
+			productRefGroup = BC2A01A669E950885FDAA0AE01FD6AC2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				33C7A91C0CC229CBD32807A80CA2F609 /* Integration */,
 				F58C4A9779CC1F6BBEAC1DCCDFE6921D /* Pods-Template */,
 				CC784D28393DBB62D936CB8B0BB62AFE /* RootViewController */,
+				74BCCE4DA6C3419669525767EE8134D8 /* SCCModule */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		138D0AD9F1BE2AAC01ED009651A3DEA7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1746A3C30C9139ACDB64FD3592258D91 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		389307D8783339CC5446010B82AA1478 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7EFD4439DEB773AD8E37A87529092B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEF31EC6A64DF4EB9EE1EC7D32C1646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E36B2A3BD9CA2DE7FCD0C810B57242F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -424,53 +617,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE6B3883751A4CE944DD5143B00330C5 /* Sources */ = {
+		5B475FC58B9339E9D50DE1C502A50693 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F38CE4DDFD58707FC87E6D1BBABC7E0E /* Pods-Template-dummy.m in Sources */,
+				5108AA76AE6DAE8CC760DACE89E40D61 /* Pods-Template-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE45C22C83F66F5C96E4B6E547A9B9E7 /* Sources */ = {
+		6DA4B99D33AC4BE120C64CC2B8B9DF1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E6386AF6528686535AC94FFA2A9280 /* RootViewController-dummy.m in Sources */,
-				3C1EA4E5B1E10A9AF82C10B80349F9F3 /* RootViewControllerConfiguration.m in Sources */,
-				E6A84E612886B6E2004A28D6 /* RootViewController.swift in Sources */,
+				DDB50523CFF14CFF0F71C36E10AF68EC /* RootViewController-dummy.m in Sources */,
+				E6C36046288E871800CEA184 /* TestViewControllerConfiguration.m in Sources */,
+				C845F13532ADDE0A291053052B4F38DA /* RootViewControllerConfiguration.m in Sources */,
+				09810BFA9ED34CF9861EE79D3164C037 /* WindowRootViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3D0BBA92B4E37BDBEDE0C4A8C91ECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3593130F1CB3A06EF1F7220B9788B8B4 /* SCCDynamicModulor.m in Sources */,
+				BA7DE7FA2D9C2947252ADAF82B0D9F06 /* SCCModule-dummy.m in Sources */,
+				6CF9A105C4413B165A5AD227F9D1A3A4 /* SCCModuleDescription.m in Sources */,
+				C0B51A954FAFEB7B5C7BC8C23B4409E2 /* SCCModuleMethod.m in Sources */,
+				FEFE3A2ABF74ED0948CC2F36278DEFE4 /* SCCModuleParam.m in Sources */,
+				4E13F671ED98D8DEB2F4CD157D0CD307 /* SCCModuleParamEnumerator.m in Sources */,
+				A35105E435DAC26F5D67DC35EACEA144 /* SCCModuleURL.m in Sources */,
+				A07C70D07C326EFCBDA0E3E7A3FE5042 /* SCCModulor.m in Sources */,
+				2471B76D9E90A64237A4BEE9DD620136 /* SCCModulorTakeEffectManager.m in Sources */,
+				4ADA38951EE908D93C0982E07A24CB15 /* SCCViewControllerModuleConfig.m in Sources */,
+				5317EF08A2A36A9E2FC9D70F5DAF4488 /* UINavigationController+SCCModulor.m in Sources */,
+				B9F1BD17E25532128EAF56A6A2AC64FD /* UIViewController+SCCModulor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		140949936699EF52EDEDE4B611F14EB7 /* PBXTargetDependency */ = {
+		0A6C83D0F17364E755CD3FE7E2CAA686 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Integration;
+			target = 33C7A91C0CC229CBD32807A80CA2F609 /* Integration */;
+			targetProxy = 4D4723A3D046001EE5408CD711E560A1 /* PBXContainerItemProxy */;
+		};
+		912FAC92E8B412DAA125FD90AB0E8235 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCCModule;
+			target = 74BCCE4DA6C3419669525767EE8134D8 /* SCCModule */;
+			targetProxy = 24C5AA377DB0ECFB7EF3E7DC60A8B044 /* PBXContainerItemProxy */;
+		};
+		9DDA8F2E72954EC472BE8D0C4052FF1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Integration;
+			target = 33C7A91C0CC229CBD32807A80CA2F609 /* Integration */;
+			targetProxy = D41F0C39AF8EF951D5BF74F85E97A096 /* PBXContainerItemProxy */;
+		};
+		CB7B8CD8879E9CF5E702B2CB42E91C37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RootViewController;
 			target = CC784D28393DBB62D936CB8B0BB62AFE /* RootViewController */;
-			targetProxy = 5688E871E090F78D11064BE6D9CD237C /* PBXContainerItemProxy */;
-		};
-		1720693172DCDECCFEBCD5DA8739FCD2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Integration;
-			target = 33C7A91C0CC229CBD32807A80CA2F609 /* Integration */;
-			targetProxy = E74C917CA547ADCC23491C6998D8B96D /* PBXContainerItemProxy */;
-		};
-		2F5EB46AFB81544438E21AF10643AF6B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Integration;
-			target = 33C7A91C0CC229CBD32807A80CA2F609 /* Integration */;
-			targetProxy = 189AC54BDC27314A0B64F803C5BBC9B2 /* PBXContainerItemProxy */;
+			targetProxy = D6325188F0775F633A98BA24899D4AD7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1FD6200133D7C4C198772B4241599B47 /* Release */ = {
+		0FE9619857E91EBD0FE74D507AA83EB3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE35B93AF30BC886B81B7B9C9A518DA3 /* RootViewController.release.xcconfig */;
+			baseConfigurationReference = AD7A0D80A90467BD3370FD3619983C87 /* SCCModule.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -479,8 +698,43 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RootViewController/RootViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RootViewController/RootViewController-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SCCModule/SCCModule-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCCModule/SCCModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SCCModule/SCCModule.modulemap";
+				PRODUCT_MODULE_NAME = SCCModule;
+				PRODUCT_NAME = SCCModule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1D642769530809AABD74690AF29C3FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 467CFBED61980633C54E4739545EA7FD /* Pods-Template.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Template/Pods-Template-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,13 +742,15 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/RootViewController/RootViewController.modulemap";
-				PRODUCT_MODULE_NAME = RootViewController;
-				PRODUCT_NAME = RootViewController;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Template/Pods-Template.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -568,10 +824,47 @@
 			};
 			name = Debug;
 		};
+		411B09568A6F353C7DE281CB0996AB53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A81130F00B566ADE7B0D7EC4D594922 /* SCCModule.release.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SCCModule/SCCModule-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCCModule/SCCModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SCCModule/SCCModule.modulemap";
+				PRODUCT_MODULE_NAME = SCCModule;
+				PRODUCT_NAME = SCCModule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		69031FC0F350547E6EDA88DEAC7EA6DB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6258FD69F846D3F4A6CD5AF4FCD8F62E /* Integration.release.xcconfig */;
+			baseConfigurationReference = BF87866DC460611BA18730B943E39024 /* Integration.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -602,79 +895,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		7420C07C008DA003679EECA1C649DFCA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 467CFBED61980633C54E4739545EA7FD /* Pods-Template.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Template/Pods-Template-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Template/Pods-Template.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AB495BAF95B0E5EA5845D85D8FC17E7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EE265B26332B5B8A8FFBD8A5B8A89FD /* Pods-Template.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Template/Pods-Template-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Template/Pods-Template.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -740,8 +960,9 @@
 		};
 		CBB1502F3977A67658F6C1C638B2E19B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C39F47ACA0D5C954017A8615B58A75BB /* Integration.debug.xcconfig */;
+			baseConfigurationReference = 253BA75442CE4D723A471B04D5A973D2 /* Integration.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -772,11 +993,11 @@
 			};
 			name = Debug;
 		};
-		FA0D6F107D08AADA64CBAA3783CAD4A1 /* Debug */ = {
+		D0826B1F9203B0BFE4F4D75464AC17D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CF7D1704004EF0362BCADE2A5B797B7 /* RootViewController.debug.xcconfig */;
+			baseConfigurationReference = 304DFEB5AD1807886C307D137BC9E4DB /* RootViewController.debug.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -800,17 +1021,98 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
+		F1EFFB04E64ECC4AC1F2D1FCCA6B90E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE265B26332B5B8A8FFBD8A5B8A89FD /* Pods-Template.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Template/Pods-Template-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Template/Pods-Template.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F45F1D4DD33FA01422E62FC08D2A06CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 796DA620F972F6E045748370402827DD /* RootViewController.release.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RootViewController/RootViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RootViewController/RootViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RootViewController/RootViewController.modulemap";
+				PRODUCT_MODULE_NAME = RootViewController;
+				PRODUCT_NAME = RootViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3EA89453013CC41083EA0FC0A3BE2134 /* Build configuration list for PBXNativeTarget "SCCModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FE9619857E91EBD0FE74D507AA83EB3 /* Debug */,
+				411B09568A6F353C7DE281CB0996AB53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -820,11 +1122,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5579424971D52BCAD5C0F72C1077827A /* Build configuration list for PBXNativeTarget "Pods-Template" */ = {
+		5637F42F91CFEE3D1B90ACD5222C0B51 /* Build configuration list for PBXNativeTarget "Pods-Template" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB495BAF95B0E5EA5845D85D8FC17E7A /* Debug */,
-				7420C07C008DA003679EECA1C649DFCA /* Release */,
+				F1EFFB04E64ECC4AC1F2D1FCCA6B90E8 /* Debug */,
+				1D642769530809AABD74690AF29C3FE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -838,11 +1140,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B90A812D3D05B94E378046EF6A05DF01 /* Build configuration list for PBXNativeTarget "RootViewController" */ = {
+		9EDEEAC622FD899FDED230FDF9CA06F5 /* Build configuration list for PBXNativeTarget "RootViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA0D6F107D08AADA64CBAA3783CAD4A1 /* Debug */,
-				1FD6200133D7C4C198772B4241599B47 /* Release */,
+				D0826B1F9203B0BFE4F4D75464AC17D5 /* Debug */,
+				F45F1D4DD33FA01422E62FC08D2A06CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

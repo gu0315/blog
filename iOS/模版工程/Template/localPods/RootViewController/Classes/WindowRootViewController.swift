@@ -10,11 +10,11 @@ import UIKit
 // Swift 类中需要暴露给 Objective-C 的方法要用关键字 @objc
 // 在 Objective-C 类中引用 ProductName-Swift.h 头文件即可引用暴露给 Objective-C 的 Swift 的类和方法
 
-public class RootViewController: UIViewController {
+public class WindowRootViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .yellow
+        self.view.backgroundColor = .red
     }
 
     @objc public static func setRootViewController() {
@@ -24,7 +24,9 @@ public class RootViewController: UIViewController {
         if (UIApplication.shared.delegate?.window != nil) {
             let apWindow: UIWindow? = UIApplication.shared.windows.first
             apWindow?.makeKeyAndVisible()
-            apWindow?.rootViewController = RootViewController()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                apWindow?.rootViewController = WindowRootViewController()
+            }
         }
     }
 }

@@ -4,4 +4,3 @@
 
 #import "IntegrationManager.h"
 #import "IntegrationProtocol.h"
-#import "RootViewControllerProtocol.h"
