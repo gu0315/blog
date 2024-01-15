@@ -1,12 +1,12 @@
 ## JavaScript
 
-##### **1.说说JavaScript 中的数据类型？存储上的差别？**
+#### **1.说说JavaScript 中的数据类型？存储上的差别？**
 
 基本数据类型：number, string, boolean, bigInt, symbol, null, undefined 存储在栈上
 
 引用数据类型： Object 存储在堆上
 
-##### **2. 解释下什么是事件代理？**
+#### **2. 解释下什么是事件代理？**
 
 通俗的讲就是把一个元素的响应事件(click, onMouse)委托到另一个元素上。
 
@@ -56,7 +56,7 @@ document.getElementById('ul').addEventListener('click', function (e) {
 
 事件委托的好处： 1：减少界面所需要的内存，提升性能。 2：动态绑定，减少重复代码。
 
-##### **3. 谈谈this对象的理解?**
+#### **3. 谈谈this对象的理解?**
 
 在javaScript中，this是一个关键字，它表示一个对象，运行时绑定，this表示的对象取决于它的调用方式。
 
