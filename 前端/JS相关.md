@@ -1,12 +1,12 @@
-##### JavaScript
+## JavaScript
 
-###### 1.说说JavaScript 中的数据类型？存储上的差别？
+##### **1.说说JavaScript 中的数据类型？存储上的差别？**
 
 基本数据类型：number, string, boolean, bigInt, symbol, null, undefined 存储在栈上
 
 引用数据类型： Object 存储在堆上
 
-###### 2. 解释下什么是事件代理？
+##### **2. 解释下什么是事件代理？**
 
 通俗的讲就是把一个元素的响应事件(click, onMouse)委托到另一个元素上。
 
@@ -56,7 +56,7 @@ document.getElementById('ul').addEventListener('click', function (e) {
 
 事件委托的好处： 1：减少界面所需要的内存，提升性能。 2：动态绑定，减少重复代码。
 
-###### 3. 谈谈this对象的理解?
+##### **3. 谈谈this对象的理解?**
 
 在javaScript中，this是一个关键字，它表示一个对象，运行时绑定，this表示的对象取决于它的调用方式。
 
@@ -64,13 +64,13 @@ document.getElementById('ul').addEventListener('click', function (e) {
 
 箭头函数中this是静态的在编译时确定。
 
-###### 4. 什么是堆，什么是栈，他们之间的有什么区别和联系？
+#### **4. 什么是堆，什么是栈，他们之间的有什么区别和联系？**
 
 栈： 先进后出，可以想象一下储物箱，先放进去后拿出来 堆：申请/释放有优先级
 
 栈：编译器自动分配释放 堆：由程序员手动管理
 
-###### 5. null 和 undefined 的区别？
+#### **5. null 和 undefined 的区别？**
 
 首先null和undefined都是基本数锯类型， null表示空对象, undefined表示未定义
 
@@ -87,11 +87,11 @@ null一般用于可以可以返回对象的变量作为初始化。
 
 Typeof null == object
 
-###### 6. 如何获取安全的 undefined 值？
+#### **6. 如何获取安全的 undefined 值？**
 
 void 0 或者 void xxx
 
-###### 7. JavaScript 类数组对象的定义？
+#### **7. JavaScript 类数组对象的定义？**
 
 具有length属性的可迭代对象，但是不能调用数组的方法。常见的类数组对象有arguments， dom返回eg:
 document.getElementsByTagName('div')
@@ -106,16 +106,16 @@ document.getElementsByTagName('div')
 
 4: 扩展运算符[...obj]
 
-###### 8. 数组有哪些常见的操作？
+#### **8. 数组有哪些常见的操作？**
 
 ...
 
-###### 9. 谈谈你对闭包的理解
+#### **9. 谈谈你对闭包的理解**
 闭包是什么，首先闭包是一个函数。这个函数访问了上层作用域的变量。
 正常函数在调用完成后，编译器会进行垃圾回收。 由于闭包捕获了上层作用的域的变量，保存对该环境中变量的引用，导致变量未被垃圾回收。可以继续访问。
 利用这一特性，我们可以实现私有属性，柯里化函数等。
 
-###### 10. 你可以手写一个柯里化函数吗？
+#### **10. 你可以手写一个柯里化函数吗？**
 柯里化函数在数学或计算机科学中的应用是指
 将一个使用多个参数的函数转换成一系列使用一个参数的函数
 ```
@@ -132,7 +132,7 @@ function curry(fn, args) {
    }
 }
 ```
-###### 11. 你能讲讲call， band, apply的区别吗?!
+#### **11. 你能讲讲call， band, apply的区别吗?!**
 首先call,band, apply都是一个方法，用于改变this的指向。
 // 参数的区别
 call 和 bind 可以传入多个参数，透过逗号分隔
@@ -141,7 +141,7 @@ apply 传入的是一个数组
 call和apply 会调用函数
 bind 会返回一个新的函数
 
-###### 12. 你能手写call， band, apply方法吗？
+#### **12. 你能手写call， band, apply方法吗？**
 ```
 Function.prototype.myCall = function (context) {
    if (context === null || context === undefined) {
@@ -195,14 +195,3 @@ Function.prototype.bind = function(context) {
 }
 
 ```
-
-
-
-
-
-
-
-
-
-
-
