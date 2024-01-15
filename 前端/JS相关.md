@@ -134,10 +134,10 @@ function curry(fn, args) {
 ```
 #### **11. 你能讲讲call， band, apply的区别吗?!**
 首先call,band, apply都是一个方法，用于改变this的指向。
-// 参数的区别
+- 参数的区别
 call 和 bind 可以传入多个参数，透过逗号分隔
 apply 传入的是一个数组
-// 执行的区别
+- 执行的区别
 call和apply 会调用函数
 bind 会返回一个新的函数
 
