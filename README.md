@@ -6,4 +6,4 @@
 
 ## 前端篇
 - [EventLoop.key](https://github.com/gu0315/blog/blob/main/%E5%89%8D%E7%AB%AF/EventLoop.key)
-- [JS相关面试题](https://github.com/gu0315/blog/blob/main/%E5%89%8D%E7%AB%AF/JS%E7%9B%B8%E5%85%B3.md)
+- [JS面试题](https://github.com/gu0315/blog/blob/main/%E5%89%8D%E7%AB%AF/JS%E7%9B%B8%E5%85%B3.md)
