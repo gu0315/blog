@@ -1,0 +1,168 @@
+简单的Vue2双向绑定原理，自己手写一遍，才能对Observer, Complie, Dep, Watcher 有更好的认识
+- Observer 劫持$data监听属性， setter触发依赖， getter添加依赖
+- Complie  模版解析, 负责模版字符串的初始化，node.nodeType === 3订阅数锯变化，node.nodeType === 1绑定更新函数
+- Dep      getter添加订阅 setter触发更新
+- Watcher  更新回调
+// eslint-disable-next-line no-unused-vars
+class Vue2 {
+    constructor(obj_instance) {
+        console.log(obj_instance.el, obj_instance.data)
+        this.$data = obj_instance.data
+        new Observer(obj_instance.data)
+        // 执行编译
+        new Complie(obj_instance.el, this)
+    }
+}
+
+class Dependency {
+    constructor() {
+        // subscribers 中添加的是Watcher
+        this.subscribers = []
+    }
+    // 添加Watcher
+    addSub = (watcher) => {
+        this.subscribers.push(watcher)
+    }
+    // 通知
+    notify = () => {
+        console.log("更新")
+        this.subscribers.forEach(watcher => {
+            console.log('watcher', this.subscribers, watcher)
+            watcher.update()
+        })
+    }
+}
+
+// 订阅者
+class Watcher {
+    constructor(vm, key, cb) {
+        this.$vm = vm;
+        this.$key = key;
+        this.cb = cb;
+        // 创建watcher时触发getter, 依赖收集
+        Dependency.target = this;
+        let v = this.$vm.$data[key];
+        Dependency.target = null;
+        return v
+    }
+
+    update() {
+        this.cb.call(this.$vm, this.$vm.$data[this.$key])
+    }
+}
+
+// 监听器, 代理Data的Set和Get
+class Observer {
+ constructor(data_instance) {
+     Object.keys(data_instance).forEach(key => {
+         // 一个 dep 对应一个 object.key，每次 key 更新时调用 dep.notify()
+         const dep = new Dependency()
+         let value = data_instance[key];
+         // TODO 如果key的值是对象, 需要递归
+         Object.defineProperty(data_instance, key, {
+             enumerable: true,
+             configurable: true,
+             get: () => {
+                 Dependency.target && dep.addSub(Dependency.target);
+                 console.log("我的值被读取了", value, dep)
+                 return value
+             },
+             set: (newValue) => {
+                 // 当值更新时，触发
+                 console.log("我的值更新了", newValue)
+                 value = newValue
+                 dep.notify()
+             }
+         })
+     })
+ }
+}
+
+// 解析器， 模版解析阶段， 找到Data中的数据并且初始化
+class Complie {
+    constructor(el, vm) {
+        this.$el = document.querySelector(el);
+        this.$vm = vm;
+        if (this.$el) {
+            this.compile(this.$el, this.$vm)
+        }
+    }
+     compile(node, vm) {
+        const childNodes = node.childNodes
+        Array.from(childNodes).forEach(node => {
+            if (node.nodeType === 1) {
+                // 元素节点
+                console.log("元素节点", node.nodeName)
+                let attrs = Array.from(node.attributes);
+                attrs.forEach((attr) => {
+                    if (attr.name.indexOf('v-') > -1) {
+                        // TODO 这里只处理了input
+                        // 当input发生变化时, 更新v-model对应的值
+                        new Watcher(vm, attr.value, function(newValue){
+                            console.log('----input-----', newValue, node)
+                            node.value = newValue
+                        });
+                        node.addEventListener('input', (event) => {
+                            vm.$data[attr.value] = event.target.value;
+                        })
+                        node.value = this.$vm.$data[attr.value]
+                    }
+                })
+            } else if (node.nodeType === 3 && /\{\{(.*)\}\}/.test(node.nodeValue)) {
+                // 文本节点, {{}} 要替换
+                console.log("文本节点", node.nodeValue)
+                if (/\{\{(.*)\}\}/.test(node.nodeValue)) {
+                    // 初始化赋值
+                    const key = RegExp.$1.trim()
+                    node.nodeValue = this.$vm.$data[key]
+                    // Get触发依赖收集，绑定更新函数
+                    new Watcher(vm, key, (newValue) => {
+                        console.log('Watcher----{{}}-----', newValue)
+                        node.nodeValue = newValue
+                    })
+                }
+            }
+            // 递归
+            if (node.childNodes && node.childNodes.length > 0) {
+                console.log(node.childNodes)
+                this.compile(node, vm)
+            }
+        })
+    }
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    姓名:<span>{{name}}</span>
+    <div>
+    <input type="text" v-model="name" style="width: 90%;"/>
+    </div>
+</div>
+
+</body>
+<script src="Vue2的双向绑定原理.js"></script>
+<script>
+    const vm = new Vue2({el: "#app", data: {
+        name: "顾钱想",
+            detail: {
+               age: "18"
+            }
+        }})
+    this.d = vm
+    console.log(vm)
+</script>
+</html>
+
+
+
+
+
+
+
